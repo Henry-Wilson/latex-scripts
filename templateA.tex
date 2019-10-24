@@ -1,0 +1,31 @@
+%Standard document with no bibliography
+%Normal pdflatex compilation intended
+
+%12pt font and letter paper is typically wanted
+%May want A4 in Oxford
+\documentclass[letter,12pt]{article}
+%One inch margins standard at CNU
+\usepackage[margin=1.0in]{geometry}
+%For the later setting of spacingstandards
+\usepackage{setspace}
+
+
+
+\begin{document}
+\title{TITLE HERE}
+\author{AUTHOR HERE}
+
+%Comment out all but "maketitle" if we want a same-page title.
+\pagenumbering{gobble}
+\maketitle
+\newpage
+\pagenumbering{arabic}
+
+%Often we want double spacing
+\setstretch{2.0}
+
+\section{FIRST SECTION}
+
+CONTENT HERE
+
+\end{document}
