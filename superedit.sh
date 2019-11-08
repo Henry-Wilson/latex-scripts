@@ -39,9 +39,9 @@ gv --widgetless $DOCNAME'.pdf' &
 sleep 0.2 #This wait time ensures we're at the back of the stack
 
 
-#Start st and vis
-#Can be replaced with some other terminal.
-st -e vis $DOC'.tex' #This command holds until we are done (no &)
+#Start user-defined $TERM and $EDITOR
+#Note: -e command specific to ST. Starts with a specific program instead of shell.
+$TERMINAL -e $EDITOR $DOC'.tex' #This command blocks until we are done (no &)
 
 
 #clean up
